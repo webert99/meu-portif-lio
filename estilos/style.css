@@ -21,12 +21,6 @@ body{
     margin: 0 auto;
 }
 
-div.flex{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-
-}
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -99,7 +93,28 @@ section.topo-do-site .flex{
 .topo-do-site p{
     color: white;
     margin: 40px 0px;
-    text-align: justify;
-    align-self: end;
+    
 }
-
+section.topo-do-site .flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .txt-topo-site {
+    flex-basis: 60%;
+  }
+  
+  .img-topo-site {
+    flex-basis: 40%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .img-topo-site img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
