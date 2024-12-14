@@ -32,7 +32,14 @@ body{
     cursor: pointer;
     
 }
-
+h2.titulo{
+    color: white;
+    font-size: 37px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #2544c1dc;;
+}
 
 /* ESTILO CABEÇALHO */
 
@@ -64,7 +71,7 @@ header nav ul li {
 }
 
 
-header .btn-contato button:hover{
+.btn-contato button:hover{
     box-shadow: 2px 2px 17px #0d278ff7;
     transform: scale(1.05);
     transition: 0.2s;
@@ -101,6 +108,7 @@ section.topo-do-site .flex {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    border: 1px solid red;
   }
   
   .txt-topo-site {
@@ -108,13 +116,40 @@ section.topo-do-site .flex {
   }
   
   .img-topo-site {
-    flex-basis: 40%;
+    flex-basis: 30%;
     max-width: 100%;
     height: auto;
   }
   
   .img-topo-site img {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+  }
+
+  /* ESTILOS DAS ESPECIALIDADES */
+
+  section.especialidades{
+    padding: 40px 4%;
+  }
+  .especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    
+    
+  }
+  .especialidades .especialidades-box i{
+    font-size: 60px;
+    color: #162c87;
   }
