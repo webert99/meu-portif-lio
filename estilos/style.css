@@ -1,16 +1,11 @@
-@charset "UTF-8";
-
 /* ESTILO GERAL */
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /*color: rgba(7, 97, 207, 0.914);*/
 }
-
-
 body{
     background-color: black;
     height: 100vh;
@@ -20,17 +15,19 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.flex{
+    display: flex;
+}
 
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600px;
     background-color:#162c87; 
     color: white;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    
 }
 h2.titulo{
     color: white;
@@ -38,36 +35,37 @@ h2.titulo{
     text-align: center;
 }
 h2.titulo span{
-    color: #2544c1dc;;
+    color: #162c87;
 }
 
-/* ESTILO CABEÇALHO */
+/* ESTILO DO CABEÇALHO */
 
 header{
-    padding:40px 4% ;
+    padding: 40px 4%;
 }
 header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header a{
-    color: rgb(99, 98, 98);
+    color: rgb(129, 123, 123);
     text-decoration: none;
     display: inline-block;
 }
 header a:hover{
     color: white;
-    transform: scale(1.09);
-    transition: 0.2s;
+    transform: scale(1.06);
 }
+
 header nav ul {
-    list-style-type:none;
+    list-style-type: none;
 }
-header nav ul li {
+header nav ul li{
     display: inline-block;
-    padding: 0 50px;
-    font-size: 1.2em;
+    padding: 0 40px;
+    transition: .2s;
 }
 
 
@@ -77,8 +75,7 @@ header nav ul li {
     transition: 0.2s;
 }
 
-/* estilo do topo */
-
+/* ESTILO DO TOPO */
 section.topo-do-site{
     padding: 40px 4%;
 }
@@ -88,48 +85,26 @@ section.topo-do-site .flex{
     justify-content: center;
     gap: 90px;
 }
-.topo-do-site h1{
+.topo-do-site  h1{
     color: white;
-    font-size: 30px;
+    font-size: 42px;
     line-height: 40px;
-    
 }
-.topo-do-site h1 span{
-    color: blue;
+.topo-do-site .txt-topo-site h1 span{
+    color: #0d278ff7;
 }
-.topo-do-site p{
+.topo-do-site .txt-topo-site p{
     color: white;
     margin: 40px 0px;
-    
+    font-size: 18px;
 }
-section.topo-do-site .flex {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    border: 1px solid red;
-  }
-  
-  .txt-topo-site {
-    flex-basis: 60%;
-  }
-  
-  .img-topo-site {
-    flex-basis: 30%;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .img-topo-site img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
+
+.topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-  }
-  
-  @keyframes flutuar{
+}
+
+@keyframes flutuar{
     0%{
         top: 0;
     }
@@ -143,13 +118,71 @@ section.topo-do-site .flex {
   section.especialidades{
     padding: 40px 4%;
   }
+
+  section.especialidades .flex{
+    gap: 60px;
+  }
+
   .especialidades .especialidades-box{
     color: white;
     padding: 40px;
-    
-    
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+  }
+  .especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.532);
   }
   .especialidades .especialidades-box i{
-    font-size: 60px;
-    color: #162c87;
+    font-size: 70px;
+    color: #1a3ab8;
   }
+  .especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  /* ESTILOS DO SOBRE */
+
+  section.sobre{
+    padding: 80px 4%;
+  }
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 33px;
+}
+.sobre .txt-sobre h2 span{
+    color: #223ba0;
+}
+
+.sobre .txt-sobre p{
+    margin:20px 0 ;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #2d4bc5c4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+.sobre .txt-sobre .btn-social button:hover{
+box-shadow: 2px 2px 17px #0d278ff7;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
