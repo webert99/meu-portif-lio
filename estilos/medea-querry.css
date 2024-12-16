@@ -1,4 +1,4 @@
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1027px) {
 
     /* gerais */
     .flex {
@@ -86,4 +86,7 @@
     footer .line-footer{
         text-align: center;
     }
-}
+
+   
+    }
+   
