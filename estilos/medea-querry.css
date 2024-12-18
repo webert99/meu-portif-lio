@@ -35,7 +35,7 @@
 
     .topo-do-site .img-topo-site {
         width: 90%;
-        margin-right: 160px;
+        margin-right: 181px;
         margin-bottom: 70px;
     }
 
@@ -87,6 +87,10 @@
         text-align: center;
     }
 
-   
+    .btn-abrir-menu{
+        display: block;
     }
+ 
+    }
+    
    
